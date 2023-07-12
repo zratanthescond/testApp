@@ -1,1 +1,399 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url(./assets/fonts/mosterrat/Montserrat-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "MyraidWeb";
+  src: local("MyraidWeb"), url(./assets/fonts/myraidweb/MyriadWeb.ttf) format("truetype");
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.nav {
+  background-color: #F2F6FF;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 48px;
+}
+
+.logoImg {
+  height: 80px;
+}
+
+.headerLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.headerLink a {
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 24px;
+  color: #003577;
+}
+
+.container {
+  display: flex;
+  padding: 0px 48px;
+}
+
+.whiteBlueBackground {
+  background-color: #F2F6FF;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sectionImage {
+  height: 757px;
+  width: 674.24px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.red {
+  color: #DD1016;
+}
+
+.blue {
+  color: #003577;
+}
+
+.white {
+  color: #F2F6FF;
+}
+
+.h5 {
+  font-weight: 700;
+  font-family: 'Montserrat';
+  font-size: 32px;
+  line-height: 24px;
+}
+
+.h1 {
+  font-weight: 700;
+  font-family: 'Montserrat';
+  font-size: 72px;
+  line-height: 80px;
+}
+
+.h4 {
+  font-weight: 400;
+  font-family: 'Montserrat';
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.dark {
+  color: #252B42;
+}
+
+.grey {
+
+  color: #737373;
+}
+
+.p-2 {
+  padding: 96px !important;
+}
+
+.pl-2 {
+  padding-left: 48px;
+}
+
+.pl-1 {
+  padding-left: 24px;
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+
+}
+
+.homeButton {
+  background-color: #003577;
+  color: #FFFFFF;
+  padding: 20px 40px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+
+
+  font-family: 'Montserrat';
+  text-decoration: none;
+}
+
+.outlined {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #003577;
+  background-color: transparent;
+  color: #003577;
+}
+
+.cardImage {
+  width: 50% !important;
+
+}
+
+.line {
+  display: block;
+  background-color: #003577;
+  width: 62px;
+  height: 8px;
+  border-radius: 10px;
+
+
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.cardHeader {
+  margin-top: 0px;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  line-height: 60px;
+  letter-spacing: 0.1px;
+}
+
+.cardParagraph {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.09em;
+  text-align: left;
+}
+
+.reversed {
+  flex-direction: row-reverse;
+}
+
+.mapSection {
+  display: flex;
+  height: 621px;
+  background-size: cover;
+  background-image: url(../src/assets/images/map.png);
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  background-color: #F2F6FF;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  height: 90%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px gainsboro;
+}
+
+.contactForm h2 {
+  align-self: flex-start;
+  color: #003577;
+  font-family: 'MyraidWeb';
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.contactForm input[type="text"] {
+  width: 386px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 5px gainsboro;
+  color: #003577;
+  font-family: 'MyraidWeb';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+
+
+
+}
+
+.contactForm input[type="text"]::placeholder {
+  color: #003577;
+  font-family: 'MyraidWeb';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  padding-left: 10px;
+}
+
+.contactForm textarea {
+  width: 386px;
+  height: 148px;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+  box-shadow: 2px 2px 5px gainsboro;
+  color: #003577;
+  font-family: 'MyraidWeb';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+}
+
+.contactForm button {
+  background-color: #003577;
+  color: #FFFFFF;
+  width: 346px;
+  height: 40px;
+  font-family: 'MyraidWeb';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  border-radius: 20px;
+
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoName {
+  font-family: 'myraidWeb';
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+  ;
+}
+
+.footerLinks {
+  font-family: 'myraidWeb';
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+
+}
+
+.footerIcon {
+  height: 42px;
+  margin: 20px;
+}
+
+.gradian {
+
+  padding: 48px;
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+
+.prodcutTitle {
+  font-family: 'Montserrat';
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 49px;
+  letter-spacing: 0em;
+  color: #F2F6FF;
+
+}
+
+.productLegend {
+  font-family: 'Montserrat';
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 3px;
+  letter-spacing: 0em;
+
+
+
+}
+
+.timeContainer {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timeNumber {
+  font-family: 'Montserrat';
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 3px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+
+.timeLetter {
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0em;
+
+}
+
+.arrowIcon {
+  width: 15.8px;
+}
+
+.iconLabel {
+  font-family: 'MyraidWeb';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+
+}
+
+.active {
+  text-decoration: underline !important;
+  text-decoration-style: solid;
+  text-decoration-color: #003577;
+
+}

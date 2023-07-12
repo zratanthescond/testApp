@@ -1,0 +1,14 @@
+<section class="section p-2 {{ whiteBlueBackground }} {{ reversed }}">
+  <div style="display: flex; flex-direction: column">
+    <div class="line"></div>
+    <div class="flexRow">
+      <h5 class="cardHeader blue">{{ headerBlue }}&nbsp;</h5>
+      <h5 class="cardHeader red">{{ headerRed }}</h5>
+    </div>
+    <p class="cardParagraph blue">
+      {{ text }}
+    </p>
+    <app-home-button placeholder="Learn more"></app-home-button>
+  </div>
+  <img class="cardImage" src="{{ imageUrl }}" />
+</section>
